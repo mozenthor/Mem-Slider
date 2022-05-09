@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(231, 231, 231);
+}
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.082); 
+  width: 69vw;
+  height: 47vw;
+  max-height: 90vh;
+  max-width: 62%;
+  border-radius: 0.5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.controls {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 2%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.control {
+  width: 18%;
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.control:hover {
+  background-color: black;
+}
+input[name='rb'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slider {
+  background-color: rgba(255, 255, 255, 0.925);
+  width: 500%;
+  height: 94%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+.slides {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  padding: 0.4%;
+  transition: all 0.44s;
+}
+.slider_text {
+  font-size: 2.2vw;
+  font-weight: 700;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2%;
+}
+.slider_img {
+  width: 100%;
+  height: 84%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1_img {  
+  background-image: url(assets/image/druzhko.png);
+}
+.slider2_img {
+  background-image: url(assets/image/charly.png);
+}
+.slider3_img {
+  background-image: url(assets/image/freddie.png);
+}
+.slider4_img {
+  background-image: url(assets/image/jennifer.png);
+}
+.slider5_img {
+  background-image: url(assets/image/katrine.png);
+}
+
+#rslide1:checked ~ .slide1 {
+  margin-left: 0;
+}
+#rslide2:checked ~ .slide1 {
+  margin-left: -20%;
+}
+#rslide3:checked ~ .slide1 {
+  margin-left: -40%;
+}
+#rslide4:checked ~ .slide1 {
+  margin-left: -60%;
+}
+#rslide5:checked ~ .slide1 {
+  margin-left: -80%;
+}
