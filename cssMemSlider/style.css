@@ -39,7 +39,7 @@ body {
   align-items: center;
 }
 .control {
-  width: 18%;
+  width: 23.2%;
   height: 25%;
   border-top: 1vw;
   border-bottom: 1vw;
@@ -48,12 +48,12 @@ body {
   border-style: solid;
   box-sizing: content-box;
   border-color: rgb(223, 221, 221);
-  background-color: rgba(143, 143, 143, 0.329);
+  background-color: rgba(143, 143, 143, 0.24);
   transition: all 0.2s;
   cursor: pointer;
 }
 .control:hover {
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(177, 175, 175);
 }
 input[name='rb'] {
   visibility: hidden;
@@ -76,12 +76,9 @@ input[name='rb'] {
 #rslide4:checked ~ .text_control > .controls > .control4 {
   background-color: rgb(133, 133, 133);
 }
-#rslide5:checked ~ .text_control > .controls > .control5 {
-  background-color: rgb(133, 133, 133);
-}
 
 .slider {
-  width: 500%;
+  width: 400%;
   height: 90%;
   display: flex;
 }
@@ -98,7 +95,7 @@ input[name='rb'] {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 20%;
+  width: 25%;
   height: 100%;
   transition: all 0.3s;
 }
@@ -114,24 +111,18 @@ input[name='rb'] {
 .slider4_img {
   background-image: url(assets/image/Alan.png);
 }
-.slider5_img {
-  background-image: url(assets/image/);
-}
 
 #rslide1:checked ~ .slider > .slider1_img {
   margin-left: 0;
 }
 #rslide2:checked ~ .slider > .slider1_img {
-  margin-left: -20%;
+  margin-left: -25%;
 }
 #rslide3:checked ~ .slider > .slider1_img {
-  margin-left: -40%;
+  margin-left: -50%;
 }
 #rslide4:checked ~ .slider > .slider1_img {
-  margin-left: -60%;
-}
-#rslide5:checked ~ .slider > .slider1_img {
-  margin-left: -80%;
+  margin-left: -75%;
 }
 
 .slider_text {
@@ -157,11 +148,6 @@ input[name='rb'] {
   font-size: 1.4vw;
 }
 #rslide4:checked ~ .text_control > .sliders_text > .slider_text4 {
-  width: 100%;
-  height: 100%;
-  font-size: 1.4vw;
-}
-#rslide5:checked ~ .text_control > .sliders_text > .slider_text5 {
   width: 100%;
   height: 100%;
   font-size: 1.4vw;
@@ -207,11 +193,7 @@ input[name='rb'] {
   height: 100%;
   font-size: 3.1vw;
 }
-#rslide5:checked ~ .text_control > .sliders_text > .slider_text5 {
-  width: 100%;
-  height: 100%;
-  font-size: 3.1vw;
-}
+
 .slider {
   height: 75%;
 }
