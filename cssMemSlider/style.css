@@ -1,0 +1,209 @@
+body {
+  background-color: rgb(231, 231, 231);
+}
+.wrapper {
+  background-color: rgb(223, 221, 221); 
+  box-shadow: 0px 4px 20px 2px;
+  width: 67vw;
+  height: 52vw;
+  max-height: 92vh;
+  max-width: 122vh; 
+  border-radius: 0.5%;
+  overflow: hidden;
+  margin-top: 5vh;
+  margin-left: 17.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper_slider {
+  width: 65vw;
+  height: 50vw;
+  max-height: 90vh;
+  max-width: 120vh; 
+  border-radius: 0.5%;
+  overflow: hidden;
+}
+.text_control {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls {
+  height: 50%;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.control {
+  width: 23.2%;
+  height: 25%;
+  border-top: 1vw;
+  border-bottom: 1vw;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  box-sizing: content-box;
+  border-color: rgb(223, 221, 221);
+  background-color: rgba(143, 143, 143, 0.24);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.control:hover {
+  background-color: rgb(177, 175, 175);
+}
+input[name='rb'] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+}
+.control:active {
+  background-color: rgb(255, 0, 0);
+}
+#rslide1:checked ~ .text_control > .controls > .control1 {
+  background-color: rgb(133, 133, 133);
+}
+#rslide2:checked ~ .text_control > .controls > .control2 {
+  background-color: rgb(133, 133, 133);
+}
+#rslide3:checked ~ .text_control > .controls > .control3 {
+  background-color: rgb(133, 133, 133);
+}
+#rslide4:checked ~ .text_control > .controls > .control4 {
+  background-color: rgb(133, 133, 133);
+}
+
+.slider {
+  width: 400%;
+  height: 90%;
+  display: flex;
+}
+.sliders_text {
+  font-weight: 700;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 65%;
+  overflow: hidden;
+}
+
+.slider_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.slider1_img {
+  background-image: url(assets/image/druzhko.png);
+}
+.slider2_img {
+  background-image: url(assets/image/cat.png);
+}
+.slider3_img {
+  background-image: url(assets/image/student.png);
+}
+.slider4_img {
+  background-image: url(assets/image/Alan.png);
+}
+
+#rslide1:checked ~ .slider > .slider1_img {
+  margin-left: 0;
+}
+#rslide2:checked ~ .slider > .slider1_img {
+  margin-left: -25%;
+}
+#rslide3:checked ~ .slider > .slider1_img {
+  margin-left: -50%;
+}
+#rslide4:checked ~ .slider > .slider1_img {
+  margin-left: -75%;
+}
+
+.slider_text {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+
+#rslide1:checked ~ .text_control > .sliders_text > .slider_text1 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+#rslide2:checked ~ .text_control > .sliders_text > .slider_text2 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+#rslide3:checked ~ .text_control > .sliders_text > .slider_text3 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+#rslide4:checked ~ .text_control > .sliders_text > .slider_text4 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+
+@media (max-width:390px) {
+  .wrapper {
+    height: 35vh;
+    width: 90vw;
+    margin-top: 20vh;
+    margin-left: 5vw;
+  }
+  .wrapper_slider {
+    height: 33vh;
+    width: 84vw;
+  }  
+ .text_control {
+   flex-direction: column-reverse;
+   height: 20%;
+   margin-top: 2%;
+ }
+ .sliders_text {
+   width: 100%;
+   height: 60%;
+ }
+ #rslide1:checked ~ .text_control > .sliders_text > .slider_text1 {
+  width: 100%;
+  height: 100%;
+  font-size: 3.1vw;
+}
+#rslide2:checked ~ .text_control > .sliders_text > .slider_text2 {
+  width: 100%;
+  height: 100%;
+  font-size: 3.1vw;
+}
+#rslide3:checked ~ .text_control > .sliders_text > .slider_text3 {
+  width: 100%;
+  height: 100%;
+  font-size: 3.1vw;
+}
+#rslide4:checked ~ .text_control > .sliders_text > .slider_text4 {
+  width: 100%;
+  height: 100%;
+  font-size: 3.1vw;
+}
+
+.slider {
+  height: 75%;
+}
+ .controls {
+   width: 40%;
+   height: 40%;
+   margin-bottom: 2%;
+ }
+ .control {
+  border-top: 1.3vh;
+  border-bottom: 1.3vh;  
+}
+}
